@@ -32,16 +32,10 @@
             border: 0;
             overflow: hidden;
             font-family: 'Noto Sans TC', sans-serif;
+            color: white;
         }
 
         .name {
-            position: fixed;
-            width: auto;
-            height: auto;
-            top: 50%;
-            left: 50%;
-            margin-top: -100px;
-            margin-left: -250px;
             text-align: center;
             font-size: 2.25rem;
             color: white;
@@ -63,6 +57,11 @@
             opacity: 0.15;
             object-fit: cover;
             height: -webkit-fill-available;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
         }
 
         .background {
@@ -73,35 +72,33 @@
             z-index: -9;
         }
 
-        .text {
-            color: #9b9b9b;
-        }
-
         .main {
-            position: absolute;
-            top: 70px;
-            right: 80px;
             text-align: right;
             line-height: 3;
             font-size: 1.5em;
             border-right: 2px solid;
             padding-right: 10px;
+            margin: 35px;
         }
+
         .photographer {
-            position: absolute;
-            bottom: 140px;
-            left: 10px;
             font-size: 1.25em;
             border-top: 2px solid;
             padding-top: 10px;
-        }
-        .mail-me {
+            float: left;
             position: absolute;
-            bottom: 30px;
-            right: 60px;
+        }
+
+        .mail-me {
+            width: auto;
+            float: right;
             font-size: 1.25em;
             border-top: 2px solid;
             padding: 10px 10px 0px 10px;
+            margin: 35px;
+            bottom: 0;
+            right: 0;
+            position: absolute;
         }
 
         .rotate-90 {
@@ -114,6 +111,12 @@
     <div class="background">
         <img src="sid.webp ">
     </div>
+    <div class="main">
+        <p>Undergrad @ IIITA</p>
+        <p>Developer</p>
+        <p>Tech Enthusiast</p>
+        <p>Aspiring Entrepreneur</p>
+    </div>
     <div class="name">
         <h1>Hello! <br> I'm Siddhant.</h1>
         <h2>
@@ -123,19 +126,13 @@
             <a href="https://instagram.com/siddhantisme" target="_blank"><i class="fa fa-instagram"></i></a>
         </h2>
     </div>
-    <div class="text">
-        <div class="main">
-            <p>Undergrad @ IIITA</p>
-            <p>Developer</p>
-            <p>Tech Enthusiast</p>
-            <p>Aspiring Entrepreneur</p>
-        </div>
-        <div class="photographer rotate-90">
-            <p>Photography</p>
-        </div>
-        <div class="mail-me">
-            <p> harshsrivastav123@gmail.com</p>
-        </div>
+    <div class="photographer rotate-90">
+        <p>Photography</p>
+    </div>
+    <div class="mail-me">
+        <p> harshsrivastav123@gmail.com</p>
+    </div>
+    <div>
     </div>
 </body>
 
